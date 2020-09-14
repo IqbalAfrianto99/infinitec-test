@@ -16,7 +16,7 @@ Object.keys(test1).map(function(key) {
     
     // Push desired result to variable
     result.push({
-      field: key,
+      field: key.split('_')[0],
       operator: utils.defineOperator(key),
       value: test1[key]
     })
